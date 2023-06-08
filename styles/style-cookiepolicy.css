@@ -1,0 +1,104 @@
+.content-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto auto auto auto auto;
+	grid-template-areas:
+		"title title title"
+		"cookiepolicy1 cookiepolicy1 cookiepolicy1"
+		"cookiepolicy2 cookiepolicy2 cookiepolicy2"
+		"cookiepolicy3 cookiepolicy3 cookiepolicy3"
+		"cookiepolicy4 cookiepolicy4 cookiepolicy4"
+		"cookiepolicy5 cookiepolicy5 cookiepolicy5"
+		"home home home";
+	gap: 2em;
+	margin-top: 1em;
+}
+
+
+.title {
+	grid-area: title;
+	font-family: darksouls;
+	font-size: calc(1em + 2.5vw);
+	line-height: 1em;
+	font-weight: bold;
+	text-align: center;
+}
+
+main > div > p {
+	font-size: calc(9px + 1vw);
+}
+
+main div p span {
+	font-weight: bold;
+	font-size: calc(11px + 1vw)
+}
+
+main > div > ol.cookiepolicy4 {
+	display: flex;
+	flex-direction: column;
+	padding-left: 0.5em;
+}
+
+
+.cookiepolicy1 {
+	grid-area: cookiepolicy1;
+}
+
+.cookiepolicy2 {
+	grid-area: cookiepolicy2;
+}
+
+.cookiepolicy3 {
+	grid-area: cookiepolicy3;
+}
+
+.cookiepolicy4 {
+	grid-area: cookiepolicy4;
+}
+
+.cookiepolicy5 {
+	grid-area: cookiepolicy5;
+}
+
+.home {
+	grid-area: home;
+	justify-self: center;
+	align-self: end;
+	max-width: 100%;
+}
+
+div.home a img {
+	width: 10em;
+	height: auto;
+}
+
+@media screen and (max-width: 653px) {
+	
+	.title {
+		font-size: calc(20px + 3vw);
+	}
+	
+	main > div > p {
+		font-size: calc(16px + 1vw);
+	}
+	
+	main div p span {
+		font-size: calc(16px + 1vw);
+	}
+	
+	a {
+		font-size: calc(20px + .8vw);
+	}
+	
+	aside div.aside-content a p span {
+		margin: 0;
+		padding-top: 0.25em;
+		font-size: calc(16px + 1vw);
+		
+	}
+
+	div.home a img {
+		width: 7em;
+		justify-self: center;
+	}
+}

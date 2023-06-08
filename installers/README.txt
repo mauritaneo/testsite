@@ -1,0 +1,1 @@
+Gli installer in questa cartella sono a puro scopo dimostrativo.
