@@ -1,0 +1,220 @@
+@font-face {
+	font-family: futura-light;
+	src: url("../font/FuturaCyrillicLight.ttf");
+}
+
+@font-face {
+	font-family: futura-book;
+	src: url("../font/FuturaCyrillicBook.ttf");
+}
+
+body {
+	font-family: futura-light;
+	font-size: calc(18px + 0.5vw);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+header { 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+h1{
+	text-align: center;
+	font-family: futura-light;
+	font-size: calc(22px + 2.6vw);
+	color: black;
+	margin-top: 4vh;
+}
+
+h4{
+	text-align: center;
+	font-family: futura-light;
+	font-size: calc(22px + 0.7vw);
+	color: #A38A00;
+	margin-top: 0.3em;
+	
+	
+}
+
+ul {
+	margin: 1vw 2vw 0 2vw;
+}
+
+li {
+	margin-bottom: 0.5vw;
+}
+
+
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+div.row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+main img {
+		display: flex;
+		width:35%;
+		height: auto;
+		padding: 4em 2em 0 5em;
+}
+
+main p {
+	font-size:calc(18px + 0.5vw);
+	line-height: 1.3em;
+    padding: 2em 5em 0 1.5em;
+	
+}
+
+div p.authornotes {
+	padding: 4vw 10vw 0 10vw;
+}
+
+div.fonti {
+	text-align: center;
+}
+
+@media screen and (max-width: 920px){
+
+	h1 {
+		margin-top: 10vh;
+	}
+	
+	div.row {
+		flex-direction: column;
+	}
+	
+	main div {
+		padding: 0;
+	}
+	
+	
+	main p {
+		padding: 0 10vw;
+	}
+	
+	div.column p {
+		padding: 4vw 10vw;
+	}
+	
+	div.fonti {
+		text-align: left;
+	}
+	
+	main img {
+		padding: 2em 0;
+		width: 80%;
+	}
+	
+	main img.cv {
+		width: 44vh
+	}
+
+	img.salama {
+		width: 80%;
+		height: auto;
+	}
+
+	img.marocco {
+		width: 80%;
+		height: auto;
+	}
+
+	img.atrio{
+		width: 80%;
+		height: auto;
+	}
+}
+
+
+div.button {
+	padding: 2em;
+}
+
+main a {
+	color: #A38A00;
+}
+
+div.button a {
+	padding: 0 0.5em;
+}
+
+footer {
+	margin-bottom: 1.5em;
+	font-size: calc(18px + 0.8vw);
+
+}
+
+img {
+	width: 50%;
+	height: auto;
+}
+
+img.ST {
+			width: 70%;
+			height: auto;
+}
+
+img.Dicaprio {
+			width: 30%;
+			height: auto;
+}
+
+img.quai {
+			width: 60%;
+			height: auto;
+}
+
+img.salama {
+			width: 30%;
+			height: auto;
+}
+
+img.marocco {
+			width: 30%;
+			height: auto;
+}
+
+img.atrio{
+			width: 30%;
+			height: auto;
+}
+
+img.cv {
+			width: 30%;
+			height: auto;
+}
+
+img.me {
+			height: 50%;
+}
+
+span { 
+		font-family: futura-book;
+}
